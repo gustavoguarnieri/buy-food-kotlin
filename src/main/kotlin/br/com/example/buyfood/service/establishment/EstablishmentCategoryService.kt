@@ -44,9 +44,9 @@ class EstablishmentCategoryService(
     return convertToDto(establishmentCategoryRepository.save(convertedEstablishmentCategoryEntity))
   }
 
-  fun updateEstablishmentCategory(EstablishmentId: Long?, establishmentRequestDto: EstablishmentCategoryRequestDTO) {
+  fun updateEstablishmentCategory(establishmentId: Long?, establishmentRequestDto: EstablishmentCategoryRequestDTO) {
     val convertedEstablishmentEntity = convertToEntity(establishmentRequestDto)
-    convertedEstablishmentEntity.apply { id = EstablishmentId }
+    convertedEstablishmentEntity.apply { id = establishmentId }
     establishmentCategoryRepository.save(convertedEstablishmentEntity)
   }
 
