@@ -11,7 +11,6 @@ plugins {
   id("io.spring.dependency-management") version "1.0.11.RELEASE"
   id("org.jetbrains.kotlin.plugin.jpa") version "1.5.21"
   id("org.jetbrains.kotlin.plugin.allopen") version "1.5.21"
-// 	id("com.diffplug.spotless") version "5.14.2"
   id("com.diffplug.spotless") version "6.5.2"
   id("jacoco")
   id("org.sonarqube") version "3.3"
